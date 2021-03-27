@@ -4,7 +4,9 @@
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
 */
-
+.cta-2-form input[type="email"]:focus {
+    outline: none !important;
+}
 body {
 	font-size: 15px;
     line-height: 1.52;
@@ -45,6 +47,15 @@ a:hover, a:focus{
 /***********************************
 Navigation bar
 ************************************/
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    object-fit: contain;
+    width: 40px;
+    height: 40px;
+}
 .navbar-default .navbar-brand {
     color: #5FCF80;
 }
@@ -92,8 +103,8 @@ Navigation bar
     text-transform: uppercase;
     padding: 0px;
     height: inherit;
-    font-size: 36px;
-    margin: 20px 0px;
+    font-size: 26px;
+    margin: 10px 0px;
 }
 .navbar-default .navbar-brand span{
 	font-weight: 100 !important;
@@ -113,12 +124,16 @@ Banner
 .banner{
 	background: url('../img/bg-banner.jpg') no-repeat center top;
     background-size: cover;
-	min-height: 580px;
+	min-height: 100vh;
     position: relative;
+}
+.text-center p {
+    width: 80%;
+    margin: 0px auto;
 }
 .bg-color{
 	background-color: RGBA(12, 11, 11, 0.82);
-	min-height: 580px;
+	min-height: 100vh;
 }
 .text-dec{
 	font-size: 24px;
@@ -139,7 +154,7 @@ Banner
 	margin-top: 30px;
 }
 .quote .btn{
-    background-color:
+    background-color: #fafafa;
 }
 .modal-dialog {
     width: 600px;
@@ -389,8 +404,8 @@ Work Shop
 Mentor Team
 ************************************/
 .pm-staff-profile-image{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: #C6C6C6;
   border-radius: 50%;
   display: inline-block;
@@ -660,7 +675,7 @@ Footer
     width: 24%;
     padding: 10px 10px;
     margin-bottom: 15px;
-    color: #fff;: #fafafa;
+    color: #fff;
     border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
     margin-bottom: 15px;
@@ -693,6 +708,9 @@ Responsive media queries
     .price-table .pricing-head h4 {
     font-size: 18px;
     }
+    .text-center p {
+        width: 100%;
+    }
 }
 @media (min-width: 451px) and (max-width: 768px) {
     .ser-text {
@@ -707,6 +725,9 @@ Responsive media queries
     }
     .price-table .pricing-head h4 {
     font-size: 18px;
+    }
+    .text-center p {
+        width: 100%;
     }
 }
 @media (min-width: 20px) and (max-width: 450px) {
@@ -776,5 +797,8 @@ Responsive media queries
     }
     .navbar-default .navbar-nav > li > a{
         text-align: center;
+    }
+    .text-center p {
+        width: 100%;
     }
 }
