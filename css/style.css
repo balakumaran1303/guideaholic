@@ -449,12 +449,16 @@ Testimonial
 /***********************************
 Course
 ************************************/
+.obji {
+    object-fit: contain !important;
+}
 [class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
     background-color: #5FCF80;
 }
 [class*=" imghvr-"], [class^="imghvr-"] {
-    background-color: #5FCF80;
+    background-color: #717f86;
     color: #fff;
+    width: 100%;
 }
 /***********************************
 Price Table
